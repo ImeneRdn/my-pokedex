@@ -1,37 +1,39 @@
-function PokemonCard(){
 
-    const pokemon = pokemonList[1];
+function PokemonCard(props){
+    console.log(props);
+    console.log(props.imgSrc);
     //condition? 
-    return pokemon.imgSrc !== undefined ?
-    
+    return props.imgSrc !== undefined ?
+
+   
     //si c'est oui alors va chercher l'image
-    <div>
+    
         <figure>
-            <img src= {pokemon.imgSrc}alt={pokemon.name} />
-            <figcaption>"{pokemon.name}</figcaption>
+            <img src= {props.imgSrc}alt={props.name} />
+            <figcaption>"{props.name}</figcaption>
         </figure>
-    </div>
+    
     // : 
     :
     //condition si c'est non
-    <div>
+    
         <figure>
             <p>???</p>
-            <figcaption>{pokemon.name}</figcaption>
+            <figcaption>{props.name}</figcaption>
         </figure>
-    </div>
+   
         
-    
+        
 }
 export default PokemonCard;
 
-const pokemonList = [
+/*const propsList = [
     {
       name: "bulbasaur",
       imgSrc:
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/props/other/official-artwork/1.png",
     },
     {
       name: "mew",
     },
-  ];
+  ];*/
