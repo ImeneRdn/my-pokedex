@@ -1,7 +1,7 @@
 
 function PokemonCard(props){
-    console.log(props);
-    console.log(props.imgSrc);
+    //console.log(props);
+    //console.log(props.imgSrc);
     //condition? 
     return props.imgSrc !== undefined ?
 
