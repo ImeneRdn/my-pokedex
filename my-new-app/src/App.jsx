@@ -1,10 +1,14 @@
 import PokemonCard from "./components/PokemonCard";
 import NavBar from "./components/NavBar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // props.1
 function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
+  useEffect(() => {
+    // ton code à exécuter
+    alert("hello pokemon trainer");
+  }, []);
 
   const pokemonList = [
     {
@@ -39,6 +43,8 @@ function App() {
         pokemonIndex={pokemonIndex}
         setPokemonIndex={setPokemonIndex}
         pokemonListLength={pokemonList.length}
+        pokemonList={pokemonList}
+        florent={pokemon}
       />
       <PokemonCard name={pokemon.name} imgSrc={pokemon.imgSrc} />
     </div>

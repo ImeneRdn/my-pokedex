@@ -1,4 +1,4 @@
-function NavBar({ pokemonIndex, pokemonListLength, setPokemonIndex }) {
+function NavBar({ pokemonIndex, pokemonListLength, setPokemonIndex, florent }) {
   // bouton suivant :quand je clic sur suivant aller a l'image suivante
   function handleNextClick() {
     setPokemonIndex(pokemonIndex + 1);
@@ -7,6 +7,7 @@ function NavBar({ pokemonIndex, pokemonListLength, setPokemonIndex }) {
   function handlePrecClick() {
     setPokemonIndex(pokemonIndex - 1);
   }
+  florent.name === "pikachu" ? alert("pika pikachu!!!") : " ";
 
   return (
     <>
