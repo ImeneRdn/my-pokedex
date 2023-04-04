@@ -8,7 +8,7 @@ function PokemonCard(props) {
 
     <figure>
       <img src={props.imgSrc} alt={props.name} />
-      <figcaption>"{props.name}</figcaption>
+      <figcaption>{props.name}</figcaption>
     </figure>
   ) : (
     // :

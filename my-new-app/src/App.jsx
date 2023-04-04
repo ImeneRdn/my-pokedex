@@ -39,6 +39,7 @@ function App() {
         pokemonIndex={pokemonIndex}
         setPokemonIndex={setPokemonIndex}
         pokemonListLength={pokemonList.length}
+        pokemonButon={pokemonList}
       />
       <PokemonCard name={pokemon.name} imgSrc={pokemon.imgSrc} />
     </div>
